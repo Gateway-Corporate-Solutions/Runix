@@ -31,7 +31,6 @@
     },
     "ntp": true,
     "packages": [
-        "git",
         "firefox",
         "discord",
         "deno",

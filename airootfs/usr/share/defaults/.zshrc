@@ -1,3 +1,4 @@
+
 eval "$(zoxide init zsh)"
 alias cd="z"
 alias ls="eza -1 --long --icons --total-size --no-user --no-permissions"
