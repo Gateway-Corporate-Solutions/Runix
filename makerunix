@@ -1,1 +1,37 @@
-/usr/bin/makerunix
+#!/usr/bin/zsh
+
+DOCUMENTS=$HOME/Documents
+PACKAGES=$DOCUMENTS/Packages
+RUNIXINSTALL=$PACKAGES/runixinstall
+RUNIX=$DOCUMENTS/Runix
+REPOS=$RUNIX/airootfs/etc/repos
+
+# Make runixinstall package and copy to Runix airootfs repo folder
+cd $RUNIXINSTALL
+rm -rf src pkg runixinstall-git
+git add .
+git commit -m "Auto commit - Building..."
+git push runix main
+makepkg -f
+
+# Purge and restore package collection
+cd $PACKAGES
+rm $REPOS/*
+cp **/*.pkg.tar.zst $REPOS
+
+# Update package db and copy to system
+cd $REPOS
+repo-add runix-packages.db.tar.gz *.pkg.tar.zst
+sudo rm /etc/repos/*.pkg.tar.zst
+sudo rm /etc/repos/runix-packages.db.tar.gz
+sudo cp ./* /etc/repos/
+
+# Build Runix ISO
+cd $RUNIX
+git add .
+git commit -m "Auto commit - Building..."
+git push runix main
+cd $DOCUMENTS
+sudo rm -rf $RUNIX/work/*
+mkdir -p ISO
+sudo mkarchiso -v -w $RUNIX/work -o ISO $RUNIX
