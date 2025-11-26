@@ -9,6 +9,7 @@ REPOS=$RUNIX/airootfs/etc/repos
 # Make runixinstall package and copy to Runix airootfs repo folder
 cd $RUNIXINSTALL
 rm -rf src pkg runixinstall-git
+rm runixinstall-*.pkg.tar.zst
 git add .
 git commit -m "Auto commit - Building..."
 git push runix main
