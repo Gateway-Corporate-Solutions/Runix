@@ -1,6 +1,7 @@
 #!/bin/zsh
 
-echo "[Containments][28][Applets][78][Configuration][General]" >> $HOME/.config/plasma-org.kde.plasma.desktop-appletsrc
-echo "icon=$HOME/.config/icons/gem.svg" >> $HOME/.config/plasma-org.kde.plasma.desktop-appletsrc
+kquitapp6 plasmashell
+kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group Containments --group 2 --group Applets --group 3 --group Configuration --group General --key icon "$HOME/.local/share/icons/gem.svg"
 echo "[KDE]" >> $HOME/.config/kdeglobals
 echo "LookAndFeelPackage=org.kde.breezedark.desktop" >> $HOME/.config/kdeglobals
+kstart5 plasmashell
