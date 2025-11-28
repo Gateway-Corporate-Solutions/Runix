@@ -5,3 +5,5 @@ kwriteconfig6 --file plasma-org.kde.plasma.desktop-appletsrc --group Containment
 echo "[KDE]" >> $HOME/.config/kdeglobals
 echo "LookAndFeelPackage=org.kde.breezedark.desktop" >> $HOME/.config/kdeglobals
 kstart5 plasmashell
+
+echo "# KDE tweaks applied."

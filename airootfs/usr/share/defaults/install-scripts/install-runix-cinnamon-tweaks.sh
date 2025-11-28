@@ -5,3 +5,6 @@ gsettings set org.cinnamon.desktop.background picture-uri "file://$HOME/.local/s
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.cinnamon.desktop.interface gtk-theme 'Adwaita-dark'
+
+echo "# Cinnamon tweaks applied."
+echo "# For persistent dark theme, you may also need to set it in Themes settings."
