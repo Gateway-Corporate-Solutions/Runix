@@ -6,3 +6,4 @@ echo "\n[KDE]\nLookAndFeelPackage=org.kde.breezedark.desktop" >> $HOME/.config/k
 kstart5 plasmashell
 
 echo -e "\e[34m# KDE tweaks applied.\e[0m"
+echo -e "\e[34m# Please reboot for all changes to take effect.\e[0m"
