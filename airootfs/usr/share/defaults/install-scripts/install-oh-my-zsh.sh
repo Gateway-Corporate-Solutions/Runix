@@ -7,5 +7,5 @@ sleep 5
 cat $HOME/.zshrc.old >> $HOME/.zshrc
 rm install.sh
 
-echo "# Oh My Zsh installed. Your old .zshrc has been backed up as .zshrc.old."
-echo "# Please restart your terminal to apply changes."
+echo -e "\e[34m# Oh My Zsh installed. Your old .zshrc has been backed up as .zshrc.old.\e[0m"
+echo -e "\e[34m# Please restart your terminal to apply changes.\e[0m"

@@ -6,4 +6,4 @@ echo "[KDE]" >> $HOME/.config/kdeglobals
 echo "LookAndFeelPackage=org.kde.breezedark.desktop" >> $HOME/.config/kdeglobals
 kstart5 plasmashell
 
-echo "# KDE tweaks applied."
+echo -e "\e[34m# KDE tweaks applied.\e[0m"
