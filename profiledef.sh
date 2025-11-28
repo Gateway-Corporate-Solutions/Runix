@@ -23,6 +23,7 @@ file_permissions=(
   ["/usr/share/defaults/.zshrc"]="0:0:646"
   ["/usr/share/defaults/install-scripts/install-oh-my-zsh.sh"]="0:0:755"
   ["/usr/share/defaults/install-scripts/install-runix-kde-tweaks.sh"]="0:0:755"
+  ["/usr/share/defaults/install-scripts/install-runix-cinnamon-tweaks.sh"]="0:0:755"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
