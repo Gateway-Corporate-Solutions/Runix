@@ -6,7 +6,7 @@ RUNIXINSTALL=$PACKAGES/runixinstall
 RUNIX=$DOCUMENTS/Runix
 REPOS=$RUNIX/airootfs/etc/repos
 
-# Make runixinstall package and copy to Runix airootfs repo folder
+# Make runixinstall package
 cd $RUNIXINSTALL
 rm -rf src pkg runixinstall-git
 rm runixinstall-*.pkg.tar.zst
